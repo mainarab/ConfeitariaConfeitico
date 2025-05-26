@@ -394,15 +394,15 @@ footer {
 }
 
 .titleCard {
-  margin-top: 30px;
-  font-size: 2rem;
+  margin-top: 10px;
+  font-size: 1.3rem;
   font-weight: 700;
 
 }
 
 .textCard {
-  margin-top: 30px;
-  font-size: 1.5rem;
+  margin-top: 10px;
+  font-size: 1rem;
   text-align: left;
 }
 
@@ -693,6 +693,16 @@ form>.btn {
     width: 400px;
     height: 615px;
   }
+
+  .titleCard{
+    margin-top: 30px;
+  font-size: 2rem;
+}
+
+.textCard{
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
 
 
   /* Encomendas */
