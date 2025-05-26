@@ -1,0 +1,733 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #0f1108;
+}
+
+body {
+  background-color: #fffaf3;
+}
+
+/* header */
+header {
+  background-color: #d4cab7;
+  padding: 20px;
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: center;
+  border-bottom: #aa224c 1px solid;
+}
+
+header>a>img {
+  max-width: 150px;
+}
+
+/* Menu */
+#menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  background-color: #fffaf3ec;
+}
+
+#menu>ul {
+  list-style-type: none;
+  margin-top: 60px;
+}
+
+.link {
+  text-decoration: none;
+  color: #aa224c;
+  font-size: 1.5rem;
+  padding: 1rem;
+  display: block;
+}
+
+.link:active {
+  color: #ff8193;
+}
+
+/* Menu hamburguer */
+#menuHamburger,
+#closeMenu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+#closeMenu {
+  display: none;
+}
+
+/* Main */
+/* Section Principal-Banner */
+
+/* começo Slider */
+.containerSlider {
+  text-align: center;
+}
+
+/* Botões */
+.btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cupcakeButton {
+  width: 25px;
+}
+
+/* Slider */
+.image {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.off {
+  display: none;
+}
+
+.on {
+  display: inline;
+}
+
+/* Fim slider */
+#principal {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+h1 {
+  font-family: "Lobster Two", sans-serif;
+  color: #aa224c;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+#principal>p {
+  margin-top: 30px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+/* Section icones */
+#icons {
+  background-color: #d4cab7;
+  display: flex;
+  justify-content: center;
+  gap: 66px;
+}
+
+.alignIcones {
+  text-align: center;
+}
+
+.alignIcones>img {
+  width: 53px;
+}
+
+.alignIcones>p {
+  font-size: 1rem;
+}
+
+/* Section Principais produtos */
+#showCase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+#showCase>a {
+  color: #aa224c;
+}
+
+#showCase>a:active {
+  color: #ff8193;
+}
+
+.coffee>p {
+  text-align: left;
+}
+
+.photoContainer {
+  width: 100%;
+  margin: 30px 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.photoContainer>img {
+  width: 70px;
+}
+
+.coffee {
+  margin-top: 30px;
+}
+
+.coffee>img {
+  width: 200px;
+}
+
+/* Section Loja próxima */
+#store {
+  background-color: #d4cab7;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+#store>article {
+  text-align: center;
+}
+
+#store>article>p {
+  padding-bottom: 30px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.btn {
+  background-color: #aa224c;
+  padding: 20px;
+  border-radius: 999px;
+  border: none;
+  color: #fffaf3;
+
+}
+
+.btn>a {
+  color: #fffaf3;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.btn:active {
+  background-color: #ff8193;
+}
+
+#store>img {
+  border-radius: 10px;
+  margin-top: 30px;
+  width: 300px;
+}
+
+/* Section mensagem */
+#mensage {
+  margin: 30px 20px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #ff8193;
+  padding: 30px 20px;
+  border-top: #0f1108 1px solid;
+}
+
+.containerFooter {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.containerFooter>h4 {
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contact>img {
+  margin-right: 5px;
+  width: 50px;
+}
+
+.contact>p {
+  font-size: 1.1rem;
+}
+
+#linkFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#linkFooter>a {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+#linkFooter>a:active {
+  color: #fffaf3;
+}
+
+#social>h4 {
+  margin: 20px 0px;
+}
+
+#social {
+  display: flex;
+  align-items: center;
+}
+
+#social>div>img {
+  width: 50px;
+}
+
+#social>div>img:not(:last-child) {
+  margin-right: 20px;
+}
+
+#signature {
+  background-color: #0f1108;
+  text-align: right;
+  padding: 10px 20px;
+}
+
+#signature>a {
+  color: #d4cab7;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+/* Quem somos */
+.center>h1 {
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+  text-align: center;
+
+}
+
+.center,
+.background {
+  padding: 30px 20px;
+}
+
+/* Sessão 1 */
+.ImgTextOnRight,
+.ImgTextOnLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.ImgTextOnRight>p,
+.ImgTextOnLeft>p,
+.center>p,
+.sectionBtn>p {
+  font-size: 1rem;
+}
+
+.ImgTextOnRight>img,
+.ImgTextOnLeft>img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+/* Sessão 2 */
+.background {
+  background-color: #d4cab7;
+}
+
+/* Sessão 4- Loja proxima */
+.sectionBtn {
+  text-align: center;
+  padding: 30px 20px;
+
+}
+
+.sectionBtn>p {
+  margin-bottom: 30px;
+}
+
+
+
+/* Cardápio */
+.marginCard {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  gap: 60px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.container {
+  width: 400px;
+  height: 615px;
+  padding: 30px 20px;
+  background-color: #d4cab7;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.container>img {
+  border-radius: 10px;
+}
+
+.titleCard {
+  margin-top: 30px;
+  font-size: 2rem;
+  font-weight: 700;
+
+}
+
+.textCard {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.banner {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+
+/* Encomendas */
+.btn>.contact {
+  margin-top: 0;
+}
+
+.btn>.contact>p {
+  color: #fffaf3;
+}
+
+#encomenda {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+#encomenda>h1 {
+  font-size: 2rem;
+}
+
+form {
+  padding: 0px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+form>input,
+form>textarea {
+  margin-bottom: 20px;
+  background-color: #d4cab7;
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+
+}
+
+form>div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+form>.btn {
+  width: 137px;
+}
+
+
+
+
+
+
+
+
+
+/* Versão Desktop*/
+@media (min-width: 1280px) {
+
+  /* Menu*/
+  #menuHamburger {
+    display: none;
+  }
+
+  #hamburguerIcon {
+    display: none;
+  }
+
+  #menu {
+    position: static;
+    display: block;
+    width: 800px;
+    height: 100%;
+    background-color: transparent;
+  }
+
+  #menu>ul {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+
+  }
+
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    align-items: center;
+  }
+
+  .link:hover {
+    color: #ff8193;
+  }
+
+  /* Section Principal */
+  /* slider */
+  .cupcakeButton {
+    width: 50px;
+  }
+
+  .image {
+    border-radius: 20px;
+  }
+
+  .btns {
+    margin-top: 30px;
+  }
+
+  /* Fim slider */
+
+  #principal {
+    padding: 30px 60px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  #principal>p {
+    font-size: 2rem;
+  }
+
+  /* Section Icons */
+  #icons {
+    padding: 0px 60px;
+    gap: 247px;
+  }
+
+  .alignIcones>img {
+    width: 200px;
+  }
+
+  .alignIcones>p {
+    font-size: 2rem;
+  }
+
+  /* Destaques */
+  #showCase {
+    padding: 30px 60px;
+  }
+
+  #showCase>a:hover {
+    color: #ff8193;
+  }
+
+  #showCase>a,
+  #showCase>p,
+  .coffee>p {
+    font-size: 2rem;
+  }
+
+  .photoContainer>img {
+    width: 300px;
+  }
+
+  .coffee {
+    display: flex;
+    align-items: center;
+  }
+
+  .coffee>p {
+    text-align: center;
+  }
+
+  .coffee>img {
+    width: 410px;
+  }
+
+  /* Loja */
+  #store {
+    padding: 30px 60px;
+    display: flex;
+    align-items: center;
+  }
+
+  #store>article>p {
+    font-size: 2rem;
+  }
+
+  .btn>a {
+    font-size: 2rem;
+  }
+
+  .btn:hover {
+    background-color: #ff8193;
+  }
+
+  #store>img {
+    width: 530px;
+    margin-left: 20px;
+  }
+
+  /* Mensagem */
+  #mensage {
+    padding: 30px 60px;
+  }
+
+  #mensage>p {
+    font-size: 2rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .containerFooter>h4 {
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  #linkFooter>a {
+    font-size: 2rem;
+  }
+
+  #linkFooter>a:hover {
+    color: #fffaf3;
+  }
+
+  .contact>img,
+  #social>div>img {
+    width: 72px;
+  }
+
+  .contact>p {
+    font-size: 1.5rem;
+  }
+
+  /* Quem somos */
+  .center,
+  .background {
+    padding: 30px 60px;
+  }
+
+  .center>h1 {
+    font-size: 3rem;
+  }
+
+  .ImgTextOnRight,
+  .ImgTextOnLeft {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .ImgTextOnRight>p,
+  .ImgTextOnLeft>p,
+  .center>p,
+  .sectionBtn>p {
+    font-size: 2rem;
+  }
+
+  .ImgTextOnRight>img,
+  .ImgTextOnLeft>img {
+    border-radius: 20px;
+  }
+
+
+  /* Lojas */
+  .ImgTextOnRight>div>p,
+  .ImgTextOnLeft>div>p {
+    font-size: 2rem;
+  }
+
+  .sectionBtn {
+    padding: 30px 60px;
+  }
+
+
+  /* Cardápio */
+  .card,
+  .marginCard {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .banner {
+    border-radius: 20px;
+  }
+
+
+  /* Encomendas */
+  #encomenda>h1 {
+    font-size: 3rem;
+  }
+
+  #encomenda,
+  form {
+    padding: 30px 60px;
+  }
+
+  form {
+    padding: 0;
+  }
+
+  form>input,
+  form>textarea {
+    width: 1000px;
+  }
+
+  form>label,
+  #encomenda>p {
+    font-size: 2rem;
+  }
+
+  .form {
+    display: flex;
+    justify-content: center;
+    padding: 30px 60px;
+  }
+
+  form>div>.btn{
+    font-size: 2rem;
+  }
+
+
+
+}
