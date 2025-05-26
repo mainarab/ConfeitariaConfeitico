@@ -367,25 +367,21 @@ footer {
 
 
 /* Cardápio */
-.marginCard {
-  margin-top: 0;
-  display: flex;
-  flex-direction: column;
-  padding: 0px 20px;
-  gap: 60px;
-}
+
 
 .card {
   display: flex;
   flex-direction: column;
-  padding: 0px 20px;
+  align-items: center;
   gap: 60px;
   margin-top: 60px;
 }
-
+.marginCard {
+  margin-top: 0;
+  gap: 60px;
+}
 .container {
-  width: 400px;
-  height: 615px;
+  width: 80%;
   padding: 30px 20px;
   background-color: #d4cab7;
   border-radius: 20px;
@@ -394,6 +390,7 @@ footer {
 
 .container>img {
   border-radius: 10px;
+  max-width: 100%;
 }
 
 .titleCard {
@@ -691,6 +688,10 @@ form>.btn {
 
   .banner {
     border-radius: 20px;
+  }
+  .container{
+    width: 400px;
+    height: 615px;
   }
 
 
